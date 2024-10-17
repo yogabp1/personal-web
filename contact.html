@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <title>Contact Me</title>
+
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+            <style>
+                * {
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                }
+
+                label {
+                    display: block;
+                    font-weight: bold;
+                }
+
+                input, select, textarea {
+                    width: 100%;
+                }
+
+                .btn-submit {
+                    background-color: orange;
+                    padding: 15px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: large;
+                    border-radius: 10px;
+                }
+            </style>
+    </head>
+
+    <body>
+    <div style="display: flex; justify-content: center; margin-top: 100px;">
+        <form style="display: flex; flex-direction: column; width: 300px; gap: 10px;">
+
+            <div>
+            <label>Name</label>
+            <input />
+            </div>
+
+            <div>
+            <label>Email</label>
+            <input />
+            </div>
+            
+            <div>
+            <label>Phone Number</label>
+            <input />
+            </div>
+
+            <div>
+            <label>Subject</label>
+            <select>
+                <option value="Fullstack Developer">Fullstack Developer</option>
+                <option value="Frontend Developer">Frontend Developer</option>
+                <option value="Backend Developer">Backend Developer</option>
+            </select>
+            </div>
+
+            <div>
+            <label>Your Message</label>
+            <textarea name="" id=""></textarea>
+            </div>
+
+            <button class="btn-submit">Submit</button>
+
+        </form>
+    </div>
+    </body>
+</html>
