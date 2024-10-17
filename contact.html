@@ -16,26 +16,28 @@
         </nav>
 
     <div style="display: flex; justify-content: center; margin-top: 100px;">
-        <form style="display: flex; flex-direction: column; width: 300px; gap: 10px;">
+        <form 
+        onsubmit="sendToMail(event)"
+        style="display: flex; flex-direction: column; width: 300px; gap: 10px;">
 
             <div>
             <label>Name</label>
-            <input />
+            <input id="input-name" />
             </div>
 
             <div>
             <label>Email</label>
-            <input />
+            <input id="input-email" />
             </div>
             
             <div>
             <label>Phone Number</label>
-            <input />
+            <input id="input-phone" />
             </div>
 
             <div>
             <label>Subject</label>
-            <select>
+            <select id="input-subject">
                 <option value="Fullstack Developer">Fullstack Developer</option>
                 <option value="Frontend Developer">Frontend Developer</option>
                 <option value="Backend Developer">Backend Developer</option>
@@ -44,12 +46,15 @@
 
             <div>
             <label>Your Message</label>
-            <textarea name="" id=""></textarea>
+            <textarea id="input-message"></textarea>
             </div>
 
             <button class="btn-orange">Submit</button>
 
         </form>
     </div>
+
+    <script src="assets/js/contact.js"></script>
+
     </body>
 </html>
